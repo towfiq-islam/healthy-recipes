@@ -83,6 +83,7 @@ const Navbar = () => {
               <figure className="w-[80px] h-[70px] lg:w-[100px] lg:h-[87px] relative">
                 <Image
                   fill
+                  unoptimized
                   className="w-full h-full object-cover"
                   src={logo}
                   alt="logo"
@@ -134,6 +135,7 @@ const Navbar = () => {
                               <Image
                                 className="w-full h-full object-cover rounded"
                                 fill
+                                unoptimized
                                 alt="image"
                                 src={`${process.env.NEXT_PUBLIC_SITE_URL}/${item?.recipe_image}`}
                               />
@@ -217,6 +219,7 @@ const Navbar = () => {
                         src={`${process.env.NEXT_PUBLIC_SITE_URL}/${user?.avatar}`}
                         alt="user"
                         fill
+                        unoptimized
                         className="size-full rounded-full object-cover"
                       />
                     ) : (
@@ -242,6 +245,7 @@ const Navbar = () => {
                             src={`${process.env.NEXT_PUBLIC_SITE_URL}/${user?.avatar}`}
                             alt="user"
                             fill
+                            unoptimized
                             className="size-full rounded-full object-cover"
                           />
                         ) : (
@@ -333,6 +337,7 @@ const Navbar = () => {
               src={logo}
               alt="logo"
               fill
+              unoptimized
             />
           </figure>
         </Link>
@@ -429,6 +434,7 @@ const Navbar = () => {
                           <figure className="w-14 shrink-0 rounded h-12 overflow-hidden relative">
                             <Image
                               fill
+                              unoptimized
                               alt="recipe image"
                               className="w-full h-full object-cover rounded"
                               src={`${process.env.NEXT_PUBLIC_SITE_URL}/${item?.recipe_image}`}

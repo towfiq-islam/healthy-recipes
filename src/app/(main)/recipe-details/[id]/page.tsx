@@ -116,6 +116,7 @@ const page = ({ params }: Props) => {
               className="w-full h-full object-cover rounded-2xl"
               src={`${process.env.NEXT_PUBLIC_SITE_URL}/${recipeData?.data?.recipe_image}`}
               fill
+              unoptimized
               alt="banner-image"
             />
           </figure>

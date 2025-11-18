@@ -32,6 +32,7 @@ const ShareYourMeal = ({ data }: shareMealProps) => {
                 <figure className="flex-shrink-0 relative">
                   <Image
                     fill
+                    unoptimized
                     src={`${process.env.NEXT_PUBLIC_SITE_URL}/${image}`}
                     alt="share image"
                   />

@@ -58,6 +58,7 @@ const Footer = async () => {
               <Image
                 className="w-full h-full object-cover"
                 fill
+                unoptimized
                 alt="logo"
                 src={`${process.env.NEXT_PUBLIC_SITE_URL}/${footerInfo?.data?.logo}`}
               />

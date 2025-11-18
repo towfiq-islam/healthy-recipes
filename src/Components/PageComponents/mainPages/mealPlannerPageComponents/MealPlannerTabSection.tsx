@@ -188,6 +188,7 @@ const MealPlannerTabSection = () => {
                 <Image
                   src={deleteImg}
                   alt="logo"
+                  unoptimized
                   className="mx-auto size-16 xl:size-auto"
                 />
                 <p className="text-primary font-merriweather text-lg lg:text-xl">

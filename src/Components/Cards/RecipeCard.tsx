@@ -76,6 +76,7 @@ const RecipeCard = ({ item, isPlanner }: recipeProps) => {
                 src={`${process.env.NEXT_PUBLIC_SITE_URL}/${item?.recipe_image}`}
                 alt="recipe_img"
                 fill
+                unoptimized
               />
 
               {/* Primary-black Overlay  */}

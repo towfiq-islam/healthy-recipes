@@ -31,6 +31,7 @@ const WhyChooseUs = ({ data }: whyChooseProps) => {
                       src={`${process.env.NEXT_PUBLIC_SITE_URL}/${image}`}
                       alt="image"
                       fill
+                      unoptimized
                     />
                   </figure>
 

@@ -24,8 +24,9 @@ const RecipeCategoryCard = ({ item }: LibraryProps) => {
       {/* Recipe Library Image */}
       <div className="h-[250px] lg:h-[300px] w-full relative rounded-sm overflow-hidden">
         <Image
-          fill
           className="w-full h-full object-cover group-hover:scale-105 duration-300 transition-all"
+          fill
+          unoptimized
           src={`${process.env.NEXT_PUBLIC_SITE_URL}/${item?.image}`}
           alt="library image"
         />
