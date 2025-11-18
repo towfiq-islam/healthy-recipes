@@ -40,6 +40,7 @@ const TestimonialCard = ({ item }: testimonialProps) => {
           <Image
             className="h-full w-full object-cover rounded-full"
             fill
+            unoptimized
             src={`${process.env.NEXT_PUBLIC_SITE_URL}/${item?.image}`}
             alt="image"
           />

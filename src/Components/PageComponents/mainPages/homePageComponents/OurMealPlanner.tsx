@@ -48,6 +48,7 @@ const OurMealPlanner = ({ data }: mealPlannerProps) => {
                   <Image
                     className="group-hover:scale-105 transition-all duration-500 rounded-md w-full"
                     fill
+                    unoptimized
                     src={`${process.env.NEXT_PUBLIC_SITE_URL}/${image}`}
                     alt="meal image"
                   />

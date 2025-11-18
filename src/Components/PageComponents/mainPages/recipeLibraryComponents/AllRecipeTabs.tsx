@@ -158,7 +158,13 @@ const AllRecipeTabs = ({ recipes, allCategories, library_id }: Props) => {
         ) : (
           <div className="text-center col-span-4 py-5 space-y-4">
             <figure className="relative mx-auto size-16 xl:size-auto">
-              <Image src={deleteImg} fill alt="logo" className="size-full" />
+              <Image
+                src={deleteImg}
+                unoptimized
+                fill
+                alt="logo"
+                className="size-full"
+              />
             </figure>
 
             <p className="text-primary-orange font-merriweather text-lg lg:text-xl">

@@ -26,6 +26,7 @@ const RecipeLibraryCard = ({ item }: RecipeLibraryCardProps) => {
           src={`${process.env.NEXT_PUBLIC_SITE_URL}/${item?.image}`}
           className="w-full h-full object-cover group-hover:scale-105 duration-300 transition-all"
           fill
+          unoptimized
           alt="recipe library"
         />
 

@@ -27,6 +27,7 @@ const page = async ({ params }: any) => {
             className="w-full h-full object-cover rounded-2xl"
             src={`${process.env.NEXT_PUBLIC_SITE_URL}/${blogDetails?.data?.image}`}
             fill
+            unoptimized
             alt="banner-image"
           />
         </div>

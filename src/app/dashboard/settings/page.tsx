@@ -93,6 +93,7 @@ const page = () => {
                 src={profilePic}
                 alt="profile"
                 fill
+                unoptimized
                 className="size-full rounded-full object-cover"
               />
             ) : (
@@ -152,7 +153,7 @@ const page = () => {
           onClick={() => setOpen(true)}
           className="rounded-[7px] font-medium px-3 py-2 inline-flex items-center gap-2 border border-[#D0D5DD] text-[15px] lg:text-base text-accent-gray cursor-pointer"
         >
-          <Image src={editPassword} alt="edit" />
+          <Image src={editPassword} unoptimized alt="edit" />
           <span>Change Password</span>
         </button>
 
