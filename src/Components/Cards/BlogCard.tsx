@@ -30,6 +30,7 @@ const BlogCard = ({ item }: blogProps) => {
         <Image
           className="w-full h-full object-cover rounded-sm group-hover:scale-110 transition-all duration-300"
           fill
+          unoptimized
           src={`${process.env.NEXT_PUBLIC_SITE_URL}/${item?.image}`}
           alt="blog image"
         />
@@ -72,6 +73,7 @@ const BlogCard = ({ item }: blogProps) => {
                 src={`${process.env.NEXT_PUBLIC_SITE_URL}/${item?.author_image}`}
                 alt="author"
                 fill
+                unoptimized
               />
             </figure>
 

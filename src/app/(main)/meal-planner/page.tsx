@@ -56,6 +56,7 @@ const page = async () => {
                 <Image
                   src={`${process.env.NEXT_PUBLIC_SITE_URL}/${item?.image}`}
                   alt="Card"
+                  unoptimized
                   width={70}
                   height={70}
                 />

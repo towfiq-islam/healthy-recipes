@@ -44,6 +44,7 @@ const DashboardHeader = ({ setOpen, isOpen }: any) => {
           <Image
             className="w-full h-full object-cover"
             fill
+            unoptimized
             src={logo}
             alt="logo"
           />
@@ -88,6 +89,7 @@ const DashboardHeader = ({ setOpen, isOpen }: any) => {
                   src={`${process.env.NEXT_PUBLIC_SITE_URL}/${user?.avatar}`}
                   alt="user"
                   fill
+                  unoptimized
                   className="size-full rounded-full object-cover"
                 />
               ) : (
@@ -113,6 +115,7 @@ const DashboardHeader = ({ setOpen, isOpen }: any) => {
                       src={`${process.env.NEXT_PUBLIC_SITE_URL}/${user?.avatar}`}
                       alt="user"
                       fill
+                      unoptimized
                       className="size-full rounded-full object-cover"
                     />
                   ) : (

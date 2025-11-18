@@ -61,6 +61,7 @@ const Hero = ({ data }: heroBannerProps) => {
                 <div className="w-full flex flex-col md:flex-row items-end gap-3 lg:gap-5 xl:px-10">
                   <div className="3xl:h-[320px] h-[230px] 3xl:w-[300px] w-full relative overflow-hidden rounded-lg">
                     <Image
+                      unoptimized
                       className="rounded-lg h-full w-full object-cover"
                       fill
                       src={`${process.env.NEXT_PUBLIC_SITE_URL}/${image}`}
@@ -73,6 +74,7 @@ const Hero = ({ data }: heroBannerProps) => {
                     <Image
                       className="rounded-lg h-full w-full object-cover"
                       fill
+                      unoptimized
                       src={`${process.env.NEXT_PUBLIC_SITE_URL}/${image_one}`}
                       alt="banner"
                     />
@@ -85,6 +87,7 @@ const Hero = ({ data }: heroBannerProps) => {
                     <Image
                       className="rounded-lg h-full w-full object-cover"
                       fill
+                      unoptimized
                       src={`${process.env.NEXT_PUBLIC_SITE_URL}/${image_two}`}
                       alt="banner"
                     />
@@ -95,6 +98,7 @@ const Hero = ({ data }: heroBannerProps) => {
                     <Image
                       className="rounded-lg h-full w-full object-cover"
                       fill
+                      unoptimized
                       src={`${process.env.NEXT_PUBLIC_SITE_URL}/${image_three}`}
                       alt="banner"
                     />

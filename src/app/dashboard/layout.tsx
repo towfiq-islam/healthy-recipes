@@ -43,6 +43,7 @@ export default function DashboardLayout({
                 <Image
                   className="w-full h-full object-cover"
                   fill
+                  unoptimized
                   src={logo}
                   alt="logo"
                 />
