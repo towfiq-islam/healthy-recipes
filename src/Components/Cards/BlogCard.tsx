@@ -66,7 +66,6 @@ const BlogCard = ({ item }: blogProps) => {
 
         <div className="mt-3 w-full flex items-center justify-between">
           <div className="flex items-center gap-3">
-            {/* Author Image */}
             <figure className="size-12 relative border border-gray-200 rounded-full">
               <Image
                 className="size-full object-cover rounded-full"
