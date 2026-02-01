@@ -11,7 +11,7 @@ import ShareYourMeal from "@/Components/PageComponents/mainPages/homePageCompone
 import UpperBlog from "@/Components/PageComponents/mainPages/blogPageComponents/UpperBlog";
 
 const page = async ({ params }: any) => {
-  const { slug } = params;
+  const { slug } = await params;
   const blogDetails = await getBlogDetails(slug);
   const shareRecipeData = await getShareRecipesData();
   const blogData = await getRecentBLogs();
