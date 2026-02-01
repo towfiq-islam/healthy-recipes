@@ -17,7 +17,7 @@ type RecipeLibraryCardProps = {
 const RecipeLibraryCard = ({ item }: RecipeLibraryCardProps) => {
   return (
     <Link
-      href={`/recipes/recipe_library/${item?.id}`}
+      href={`/recipe-library/${item?.id}`}
       className={`w-full bg-white shadow-[0px_0px_8px_0px_rgba(0,0,0,0.04)] block group rounded-lg `}
     >
       {/* Recipe Library Image */}
