@@ -1,4 +1,3 @@
-import React from "react";
 import BlogCard from "@/Components/Cards/BlogCard";
 import { getRecentBLogs } from "@/Hooks/api/cms_api";
 import Container from "@/Components/Common/Container";
