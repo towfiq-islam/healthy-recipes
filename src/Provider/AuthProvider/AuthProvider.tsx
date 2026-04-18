@@ -17,7 +17,7 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState<boolean>(false);
   const [user, setUser] = useState<any>(null);
   const [token, setToken, clearToken] = useLocalStorage("token", null);
-  const { data: userData, isLoading: loadingUserData } = useGetUserData(token);
+  const { data: userData, isLoading: loadingUserData } = useGetUserData();
 
   useEffect(() => {
     if (!token) {

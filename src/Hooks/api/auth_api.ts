@@ -116,8 +116,8 @@ export const useVerifyOTP = () => {
         toast.success(data?.message);
         router.push(
           `/auth/reset-password?email=${encodeURIComponent(
-            data?.data?.email
-          )}&key=${data?.data?.password_reset_token}`
+            data?.data?.email,
+          )}&key=${data?.data?.password_reset_token}`,
         );
       }
     },
