@@ -1,9 +1,10 @@
-// import axios from "axios";
-// import { getItem, removeItem } from "@/lib/localStorage";
+import axios from "axios";
+import { getItem, removeItem } from "@/lib/localStorage";
 
-// export const axiosSecure = axios.create({
-//   baseURL: process.env.NEXT_PUBLIC_SITE_URL,
-// });
+export const axiosSecure = axios.create({
+  baseURL: process.env.NEXT_PUBLIC_SITE_URL,
+  withCredentials: true,
+});
 
 // axiosSecure.interceptors.request.use(
 //   config => {
@@ -15,7 +16,7 @@
 //   },
 //   error => {
 //     return Promise.reject(error);
-//   }
+//   },
 // );
 
 // axiosSecure.interceptors.response.use(
@@ -29,22 +30,8 @@
 //       window.location.reload();
 //     }
 //     return Promise.reject(error);
-//   }
+//   },
 // );
-
-// const useAxiosSecure = () => {
-//   return axiosSecure;
-// };
-
-// export default useAxiosSecure;
-
-import axios from "axios";
-import { getItem, removeItem } from "@/lib/localStorage";
-
-export const axiosSecure = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_SITE_URL,
-  withCredentials: true,
-});
 
 const useAxiosSecure = () => {
   return axiosSecure;
