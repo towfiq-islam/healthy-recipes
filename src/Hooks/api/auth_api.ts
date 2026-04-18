@@ -6,11 +6,23 @@ import { useRouter } from "next/navigation";
 import { useQueryClient } from "@tanstack/react-query";
 
 // Get User Data
-export const useGetUserData = (token: any) => {
+// export const useGetUserData = (token: any) => {
+//   return useClientApi({
+//     method: "get",
+//     key: ["user", token],
+//     enabled: !!token,
+//     endpoint: "/api/users/data",
+//     isPrivate: true,
+//     queryOptions: {
+//       refetchInterval: 1000 * 60 * 60, // refetch every hour
+//     },
+//   });
+// };
+
+export const useGetUserData = () => {
   return useClientApi({
     method: "get",
-    key: ["user", token],
-    enabled: !!token,
+    key: ["user"],
     endpoint: "/api/users/data",
     isPrivate: true,
     queryOptions: {
