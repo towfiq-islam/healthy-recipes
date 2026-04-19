@@ -30,6 +30,7 @@ const Hero = () => {
         "https://mohammadhasanii.thewarriors.team/api/review/1",
         {
           method: "POST",
+          credentials:"include",
           headers: {
             "Content-Type": "application/json",
           },
