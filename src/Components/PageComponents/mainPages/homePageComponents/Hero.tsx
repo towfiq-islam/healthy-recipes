@@ -27,7 +27,7 @@ const Hero = () => {
 
     try {
       const res = await fetch(
-        "https://mohammadhasanii.thewarriors.team/api/api/users",
+        "https://mohammadhasanii.thewarriors.team/api/review/1",
         {
           method: "POST",
           headers: {
