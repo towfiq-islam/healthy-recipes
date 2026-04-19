@@ -20,8 +20,6 @@ interface heroBannerProps {
 }
 
 const Hero = () => {
-  
-
   const handleSubmit = async () => {
     const formData = {
       name: "towfiq",
@@ -29,7 +27,7 @@ const Hero = () => {
 
     try {
       const res = await fetch(
-        "http://mohammadhasanii.thewarriors.team/api/review/1",
+        "https://mohammadhasanii.thewarriors.team/api/api/users",
         {
           method: "POST",
           headers: {
