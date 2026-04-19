@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Button from "@/Components/Common/Button";
 import Container from "@/Components/Common/Container";
+import { useGetUserData } from "@/Hooks/api/auth_api";
 
 type heroBannerItem = {
   title: string;
@@ -19,7 +20,6 @@ interface heroBannerProps {
 }
 
 const Hero = () => {
-
   const handleSubmit = async () => {
     const formData = {
       name: "towfiq",
@@ -33,7 +33,6 @@ const Hero = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          credentials: "include",
           body: JSON.stringify(formData),
         },
       );
