@@ -6,10 +6,11 @@ import { useRouter } from "next/navigation";
 import { useQueryClient } from "@tanstack/react-query";
 
 // Get User Data
-export const useGetUserData = () => {
+export const useGetUserData = (token: any) => {
   return useClientApi({
     method: "get",
-    key: ["user"],
+    key: ["user", token],
+    enabled: !!token,
     endpoint: "/api/users/data",
     isPrivate: true,
     queryOptions: {

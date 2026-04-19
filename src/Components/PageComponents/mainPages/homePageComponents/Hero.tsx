@@ -20,6 +20,8 @@ interface heroBannerProps {
 }
 
 const Hero = () => {
+  
+
   const handleSubmit = async () => {
     const formData = {
       name: "towfiq",
