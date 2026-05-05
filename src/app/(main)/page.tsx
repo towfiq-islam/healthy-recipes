@@ -27,7 +27,7 @@ const Page = async () => {
 
   return (
     <>
-      <Hero />
+      <Hero data={heroData?.data} />
       <WhyChooseUs data={whyChooseData?.data} />
       <TrendingDiet />
       <RecipeLibrary data={recipeLibraryData?.data} />
